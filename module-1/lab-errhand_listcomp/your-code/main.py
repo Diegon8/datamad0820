@@ -122,17 +122,17 @@ for x in non_vowels:
 print(non_vowels)
 
 
-'''
+
 
 #10. Find the folders you have in your datamad0820 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
 
-importar librería OS
-hacer lista funcion listdir 
-metes ruta de tu ordenador y luego print
 
+files=[os.listdir('/home/diegon8/datamad0820/')]
+print(files)
 
+'''
 #11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
 #You will probably need to import random module
 # Remember to use list comprehensions and to print your results
