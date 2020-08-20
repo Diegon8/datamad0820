@@ -156,7 +156,7 @@ flatten_list = [i for sub in list_of_lists for i in sub]
 print(flatten_list)
 
 
-'''
+
 #13. Convert the numbers of the following nested list to floats. Use floats as the name of the list. 
 # Remember to use list comprehensions and to print your results.
 
@@ -165,32 +165,49 @@ list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', 
 ['100', '100', '100', '100']]
 
 
+floats = [float(i) for lst in list_of_lists for i in lst]
+
+print(floats)
+
+
 
 
 #14. Handle the exception thrown by the code below by using try and except blocks. 
 
+print('Problem14 :')
+try:
+    for i in ['a','b','c']:
+        print(i**2)
+except Exception as e:
+        print("Ha fallado, verifique error")
+        print(e)
 
-for i in ['a','b','c']:
-    print(i**2)
 
 
 #15. Handle the exception thrown by the code below by using try and except blocks. 
 #Then use a finally block to print 'All Done.'
 # Check in provided resources the type of error you may use. 
+print('Problem15 :')
 
 x = 5
 y = 0
+try:
+    z = x/y
+except ZeroDivisionError:
+        print("No dividas por cero! Que haces, loco?")
+#El copión jajajajaja
+finally:
+    print('All done')
 
-z = x/y
 
-
-
+'''
 
 #16. Handle the exception thrown by the code below by using try and except blocks. 
 # Check in provided resources the type of error you may use. 
 
 abc=[10,20,20]
-print(abc[3])
+try:
+    print(abc[3])
 
 
 #17. Handle at least two kind of different exceptions when dividing a couple of numbers provided by the user. 
