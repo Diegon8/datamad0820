@@ -88,12 +88,12 @@ for x in non_vowels:
 print(non_vowels)
 
 #USANDO LIST COMPREHENSION ME QUEDABA OTTRA VEZ CON COMILLAS Y ESPACIOS DENTRO DE LA LISTA, DEJO EL CÓDIGO DEBAJO
-'''
+'''  
 sentence = 'Hey there, Im using python and it is cool'
 vowels=['a','e','i','o','u']
 non_vowels=[i for i in sentence if i not in vowels]
 print(non_vowels)
-'''
+'''   
 
 
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
@@ -200,19 +200,40 @@ finally:
     print('All done')
 
 
-'''
-
 #16. Handle the exception thrown by the code below by using try and except blocks. 
 # Check in provided resources the type of error you may use. 
 
+print('Problem 16 :')
 abc=[10,20,20]
 try:
     print(abc[3])
+except IndexError:
+    print("Error de índice en la cadena")
 
 
 #17. Handle at least two kind of different exceptions when dividing a couple of numbers provided by the user. 
 # Hint: take a look on python input function. 
 # Check in provided resources the type of error you may use. 
+
+print('Problem 17 :')
+
+#NO CONSIGO VERLO!!!!
+'''
+x = input('Introduce un numero:' )
+y = input('Introduce otro numero:')
+
+def division(x,y):
+    try:
+        return x/y
+    except TypeError:
+        print("Tipo invalido. a y b deben ser int o float")
+    except ZeroDivisionError:
+        print("No dividas por cero! Que haces, loco?")
+    except Exception as e:
+        print("Ha fallado, verifique error")
+        print(e)
+
+'''
 
 
 
@@ -220,12 +241,16 @@ try:
 #18. Handle the exception thrown by the code below by using try and except blocks. 
 # Check in provided resources the type of error you may use. 
 
-f = open('testfile','r')
-f.write('Test write this')
+print('Problem 18 :')
+try:
+    f = open('testfile','r')
+    f.write('Test write this')
+except FileNotFoundError:
+    print("Archivo no encontrado...")
 
 
 
-
+'''
 #19. Handle the exceptions that can be thrown by the code below using try and except blocks. 
 #Hint: the file could not exist and the data could not be convertable to int
 
@@ -268,5 +293,4 @@ def linux_interaction():
 # Hint: Create a class derived from the pre-defined Exception class in Python
 
 Total_Marks = int(input("Enter Total Marks Scored: ")) 
-Num_of_Sections = int(input("Enter Num of Sections: "))
-'''
+Num_of_Sections = int(input("Enter Num of Sections: ")) '''
