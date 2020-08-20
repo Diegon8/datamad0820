@@ -14,6 +14,9 @@ print(my_listComprehension)
 #1. Calculate the square number of the first 20 numbers. Use square as the name of the list.
 # Remember to use list comprehensions and to print your results
 
+print('Problem1 :')
+square = [i**2 for i in list(range(1,21))]
+print(square)
 
 
 '''
