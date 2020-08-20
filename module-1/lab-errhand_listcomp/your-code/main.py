@@ -27,7 +27,7 @@ print('Problem2 :')
 power_of_two = [2**i for i in list(range(1,51))]
 print(power_of_two)
 
-'''
+
 
 #3. Calculate the square root of the first 100 numbers. Use sqrt as the name of the list.
 # You will probably need to install math library with pip and import it in this file.  
@@ -36,17 +36,19 @@ print(power_of_two)
 
 
 
+
 #4. Create this list [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]. Use my_list as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
+my_list = list(range(-10,1))
+print(my_list)
 
 
 #5. Find the odd numbers from 1-100. Use odds as the name of the list. 
 # Remember to use list comprehensions and to print your results
 
 
-
+'''
 
 #6. Find all of the numbers from 1-1000 that are divisible by 7. Use divisible_by_seven as the name of the list.
 # Remember to use list comprehensions and to print your results
