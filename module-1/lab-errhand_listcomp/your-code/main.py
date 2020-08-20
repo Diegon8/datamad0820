@@ -127,26 +127,36 @@ print(non_vowels)
 #10. Find the folders you have in your datamad0820 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
-
+print('Problem10 :')
 
 files=[os.listdir('/home/diegon8/datamad0820/')]
 print(files)
 
-'''
+
 #11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
 #You will probably need to import random module
 # Remember to use list comprehensions and to print your results
 
-[i for i in listrange()]
+print('Problem 11 :')
+
+random_lists = [[random.randint(0,100) for i in range(10)] for x in range(4)]
+print(random_lists)
+
 
 
 #12. Flatten the following list of lists. Use flatten_list as the name of the output.
 # Remember to use list comprehensions and to print your results
 
+print('Problem 12 :')
+
 list_of_lists = [[1,2,3],[4,5,6],[7,8,9]]
 
+flatten_list = [i for sub in list_of_lists for i in sub]
+
+print(flatten_list)
 
 
+'''
 #13. Convert the numbers of the following nested list to floats. Use floats as the name of the list. 
 # Remember to use list comprehensions and to print your results.
 
