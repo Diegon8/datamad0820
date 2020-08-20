@@ -100,9 +100,8 @@ print(non_vowels)
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
 
-sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog''
-[i for i in ]
-
+capital_letters=[v for k,v in enumerar.items() if v.isupper()==True]
+print(capital_letters)
 
 '''
 #9. Find all the consonants in the sentence 'The quick brown fox jumped over the lazy dog'.
