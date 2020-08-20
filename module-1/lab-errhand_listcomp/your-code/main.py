@@ -67,18 +67,24 @@ def div7(num):
         return False
 divisible_by_seven = [i if div7(i) else "" for i in range(1,1001)]
 print(divisible_by_seven)
-'''
+
 
 
 #7. Remove all of the vowels in a string. Hint: make a list of the non-vowels. Use non_vowels as the name of the list.
 # Remember to use list comprehensions and to print your results
 # You can use the following test string but feel free to modify at your convenience
 
-teststring = 'Find all of the words in a string that are monosyllabic'
+print('Problem7 :')
 
+non_vowels = 'Hey there, Im using python and it is cool'
+vowels = ('a','e','i','o','u')  
+non_vowels = non_vowels.lower()
+for x in non_vowels:
+   if x in vowels:
+       non_vowels = non_vowels.replace(x, '') 
+print(non_vowels)
 
-
-
+'''
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
@@ -94,10 +100,13 @@ teststring = 'Find all of the words in a string that are monosyllabic'
 
 
 
-#10. Find the folders you have in your madrid-oct-2018 local repo. Use files as name of the list.  
+#10. Find the folders you have in your datamad0820 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
 
+importar librería OS
+hacer lista funcion listdir 
+metes ruta de tu ordenador y luego print
 
 
 #11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
