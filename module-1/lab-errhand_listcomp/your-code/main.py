@@ -100,18 +100,29 @@ print(non_vowels)
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
 
-capital_letters=[v for k,v in enumerar.items() if v.isupper()==True]
+print('Problem 8 :')
+sentence='The Quick Brown Fox Jumped Over The Lazy Dog'
+dicnum=dict(enumerate(sentence))
+capital_letters=[v for k,v in dicnum.items() if v.isupper()==True]
 print(capital_letters)
 
-'''
+
 #9. Find all the consonants in the sentence 'The quick brown fox jumped over the lazy dog'.
 # Use consonants as the name of the list.
 # Remember to use list comprehensions and to print your results.
 
+print('Problem9 :')
+
+non_vowels = 'The quick brown fox jumped over the lazy dog'
+vowels = ('a','e','i','o','u')  
+non_vowels = non_vowels.lower()
+for x in non_vowels:
+   if x in vowels:
+       non_vowels = non_vowels.replace(x, '') 
+print(non_vowels)
 
 
-
-
+'''
 
 #10. Find the folders you have in your datamad0820 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
