@@ -19,12 +19,15 @@ square = [i**2 for i in list(range(1,21))]
 print(square)
 
 
-'''
+
 #2. Calculate the first 50 power of two. Use power_of_two as the name of the list.
 # Remember to use list comprehensions and to print your results
 
+print('Problem2 :')
+power_of_two = [2**i for i in list(range(1,51))]
+print(power_of_two)
 
-
+'''
 
 #3. Calculate the square root of the first 100 numbers. Use sqrt as the name of the list.
 # You will probably need to install math library with pip and import it in this file.  
