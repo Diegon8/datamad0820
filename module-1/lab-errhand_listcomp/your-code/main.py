@@ -250,14 +250,20 @@ except FileNotFoundError:
 
 
 
-'''
+
 #19. Handle the exceptions that can be thrown by the code below using try and except blocks. 
 #Hint: the file could not exist and the data could not be convertable to int
+print('Problem 19 :')
 
-fp = open('myfile.txt')
-    line = f.readline()
-    i = int(s.strip())
-
+try:
+    fp = open('myfile.txt')
+    try:
+        line = f.readline()
+        i = int(s.strip())
+    except IndentationError:
+        print("Error de identación")
+except FileNotFoundError:
+    print("Archivo no encontrado...")
 
 
 
@@ -266,12 +272,19 @@ fp = open('myfile.txt')
 # Handle this exception using try and except blocks. 
 # You will probably need to import sys 
 
-def linux_interaction():
-    assert ('linux' in sys.platform), "Function can only run on Linux systems."
-    print('Doing something.')
+print('Problem 20 :')
+try:
+    def linux_interaction():
+        assert ('linux' in sys.platform), "Function can only run on Linux systems."
+        print('Doing something.')
+except Exception as e:
+    print(e)
+    
+#ME ACOJONA UN POCO PORQUE ESTOY USANDO UBUNTU Y NO ME DEVUELVE NADA
 
 
-# Bonus Questions:
+'''
+# Bonus Questions: (OU MAMA)
 
 # You will need to make some research on dictionary comprehension to solve the following questions
 
@@ -279,15 +292,19 @@ def linux_interaction():
 # Hint: we need to continually keep checking until we get an integer.
 # Use a while loop with a try,except, else block to account for incorrect inputs.
 
-
-
+x  = input('Introduce un numero!')
+'''
 
 # 22. Find all of the numbers from 1-1000 that are divisible by any single digit besides 1 (2-9). 
 # Use results as the name of the list 
 
+print('Problem 22 :')
+
+results = [[i for i in range(1001) if i%o == 0] for o in range(2,10)]
+print(results)
 
 
-
+'''
 # 23. Define a customised exception to handle not accepted values. 
 # You have the following user inputs and the Num_of_sections can not be less than 2.
 # Hint: Create a class derived from the pre-defined Exception class in Python
