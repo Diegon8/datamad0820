@@ -53,12 +53,21 @@ print('Problem5 :')
 odds = list(range(1,100,2))
 print(odds)
 
-'''
+
 
 #6. Find all of the numbers from 1-1000 that are divisible by 7. Use divisible_by_seven as the name of the list.
 # Remember to use list comprehensions and to print your results
 
+print('Problem6 :')
 
+def div7(num):
+    if num%7 == 0:
+        return True
+    else:
+        return False
+divisible_by_seven = [i if div7(i) else "" for i in range(1,1001)]
+print(divisible_by_seven)
+'''
 
 
 #7. Remove all of the vowels in a string. Hint: make a list of the non-vowels. Use non_vowels as the name of the list.
