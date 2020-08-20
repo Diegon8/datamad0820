@@ -43,7 +43,7 @@ print(sqrt)
 # Remember to use list comprehensions and to print your results
 print('Problem4 :')
 
-my_list = list(range(-10,1))
+my_list = [i for i in(range(-10,1))]
 print(my_list)
 
 
@@ -51,7 +51,7 @@ print(my_list)
 # Remember to use list comprehensions and to print your results
 print('Problem5 :')
 
-odds = list(range(1,100,2))
+odds = [i for i in (range(1,100,2))]
 print(odds)
 
 
@@ -69,6 +69,8 @@ def div7(num):
 divisible_by_seven = [i if div7(i) else "" for i in range(1,1001)]
 print(divisible_by_seven)
 
+# NO CONSIGO QUE EL ELSE NO DEVUELVA NADA Y QUEDA UNA LISTA MUY FEA CON LAS COMILLAS
+
 
 
 #7. Remove all of the vowels in a string. Hint: make a list of the non-vowels. Use non_vowels as the name of the list.
@@ -85,19 +87,28 @@ for x in non_vowels:
        non_vowels = non_vowels.replace(x, '') 
 print(non_vowels)
 
+#USANDO LIST COMPREHENSION ME QUEDABA OTTRA VEZ CON COMILLAS Y ESPACIOS DENTRO DE LA LISTA, DEJO EL CÓDIGO DEBAJO
+'''
+sentence = 'Hey there, Im using python and it is cool'
+vowels=['a','e','i','o','u']
+non_vowels=[i for i in sentence if i not in vowels]
+print(non_vowels)
+'''
+
 
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
-'''
+
 sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog''
 [i for i in ]
 
 
-
+'''
 #9. Find all the consonants in the sentence 'The quick brown fox jumped over the lazy dog'.
 # Use consonants as the name of the list.
 # Remember to use list comprehensions and to print your results.
+
 
 
 
@@ -140,7 +151,7 @@ list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', 
 
 
 for i in ['a','b','c']:
-    print i**2
+    print(i**2)
 
 
 #15. Handle the exception thrown by the code below by using try and except blocks. 
