@@ -11,14 +11,22 @@ class Soldier:
      def receiveDamage(self, dano):
          self.damage = dano
          self.health = self.health - dano
-'''pass
+pass
 
 # Viking
 
 
-class Viking:
+class Viking(Soldier):
+    def __init__(self, nombre, vida, fuerza)
+        self.name = nombre
+        super().__init__(vida, fuerza)
+    def attack(Soldier)
+    def receiveDamage(self, dano):
+         self.damage = dano
+         self.health = self.health - dano
+         
     pass
-
+'''
 # Saxon
 
 
