@@ -48,10 +48,13 @@ class Saxon(Soldier):
              return ('A Saxon has died in combat')
         
 
-'''
 # War
 
-
 class War:
+    def __init__(self):
+        
+
+
+
+
     pass
-'''
