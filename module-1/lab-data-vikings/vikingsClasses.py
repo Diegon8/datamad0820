@@ -17,14 +17,20 @@ pass
 
 
 class Viking(Soldier):
-    def __init__(self, nombre, vida, fuerza)
+    def __init__(self, nombre, vida, fuerza):
         self.name = nombre
         super().__init__(vida, fuerza)
-    def attack(Soldier)
+    def attack(Soldier):
+        return self.strength
     def receiveDamage(self, dano):
          self.damage = dano
          self.health = self.health - dano
-         
+         if self.health > 0:
+             print(nombre,'has received',dano,'points of damage.')
+         else:
+             print(nombre,'has died.')
+    def battlecry(self):
+        print('Odin owns you all!')
     pass
 '''
 # Saxon
