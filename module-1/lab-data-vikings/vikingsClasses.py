@@ -3,7 +3,14 @@
 
 
 class Soldier:
-    pass
+     def __init__(self, health, strength):
+         self.vida = health
+         self.fuerza = strength
+     def attack(self):
+         return self.fuerza
+     def receiveDamage(self, damage):
+         return self.vida - self.damage
+pass
 
 # Viking
 
