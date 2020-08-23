@@ -49,12 +49,12 @@ class Saxon(Soldier):
         
 
 # War
-
+'''
 class War:
     def __init__(self):
-        
 
 
 
 
-    pass
+
+    pass'''
