@@ -18,17 +18,18 @@ a = np.random.randint(10, size=(2,3,5))
 #4. Print a.
 
 print(a)
-'''
+
 
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
+b = np.ones((5,2,3))
 
 
 #6. Print b.
 
-
-
+print(b)
+'''
 #7. Do a and b have the same size? How do you prove that in Python code?
 
 
