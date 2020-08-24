@@ -29,15 +29,20 @@ b = np.ones((5,2,3))
 #6. Print b.
 
 print(b)
-'''
+
 #7. Do a and b have the same size? How do you prove that in Python code?
 
+print('a and b same size?',a.size == b.size)
+print('a and b same shape?',a.shape == b.shape)
 
 
 
 #8. Are you able to add a and b? Why or why not?
+try:
+ np.concatenate([a,b])
+except ValueError: 'all the input array dimensions for the concatenation axis must match exactly'
 
-
+'''
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
