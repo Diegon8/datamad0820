@@ -1,7 +1,7 @@
 #1. Import the NUMPY package under the name np.
 
 
-
+'''
 #2. Print the NUMPY version and the configuration.
 
 
@@ -112,3 +112,4 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+'''
