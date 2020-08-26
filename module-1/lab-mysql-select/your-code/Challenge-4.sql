@@ -16,6 +16,14 @@ from titleauthor a
 left join authors b on a.au_id = b.au_id
 left join tit_sal c on a.title_id = c.title_id
 group by author_id, last_name, first_name
-order by n_sales desc)
+order by n_sales desc),
 
-select * from au_titsal
+Solution as (
+select a.au_id as author_id,
+       a.au_lname,
+       a.au_fname,
+       b.n_sales
+ from authors a
+ left join au_titsal b on a.au_id = b.author_id)
+ 
+ select * from Solution order by n_sales desc
