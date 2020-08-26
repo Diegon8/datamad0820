@@ -23,7 +23,7 @@ autit_profits as (
 select author_id,
        last_name,
        first_name,
-       advance,
+       advance * (royalty_per/100) as advance,
        (price*ytd_sales)*(royalty/100)*(royalty_per/100) as rylt_profit
 from autit_profs),
 
