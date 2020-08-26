@@ -1,15 +1,10 @@
-#Solution challenge3
-with au_sales as (
-select a.au_id as AUTHOR_ID,
-       b.au_lname as LAST_NAME,
-       b.au_fname as FIRST_NAME,
-       sum(c.qty) as N_SALES
+select a.au_id as author_id,
+       b.au_lname as last_name,
+       b.au_fname as first_name,
+       sum(c.ytd_sales) as n_sales
 from titleauthor a
 left join authors b on a.au_id = b.au_id
-left join sales c on a.title_id = c.title_id
+left join titles c on a.title_id = c.title_id
 group by author_id, last_name, first_name
-order by n_sales desc)
-
-select * from au_sales
+order by n_sales desc
 limit 3
-       
