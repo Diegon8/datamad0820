@@ -35,5 +35,28 @@ grep -c 'et' at.txt
 #18 volvemos a lorem-copy con cd
 grep -c 'et' at.txt lorem.txt sed.txt
 
+###BONUS
+#1
+name='Diego'
+#2
+echo $name
+#3
+mkdir $name
+#4
+rm -d $name
+#5 cd to lab-bash
+  #5.1
+  for file in $(ls lorem); do echo $file; done;
+  #5.2
+  for file in $(ls lorem); do echo -n "$file" | wc -m ; done;
+  #5.3
+  for file in $(ls lorem); do echo "'$file' has '${#file}' characters length"; done;
+
+#6
+top
+
+
+
+
 
 
