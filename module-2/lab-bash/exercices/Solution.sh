@@ -54,6 +54,19 @@ rm -d $name
 
 #6
 top
+#7
+ps -eo args
+#8
+cat /proc/cpuinfo
+#9
+#Lo de los alias prefiero verlo con vosotros
+#10
+sudo apt install zip unzip
+zip lorem-compressed.tar.gz lorem lorem-copy
+unzip lorem-compressed.tar.gz -d lab-bash
+
+
+
 
 
 
