@@ -70,10 +70,30 @@ sort {"founded_year":1}
 
 15)
 
+filter {founded_day:{$lte:7}}
+sort {"acquisition.price_amount":-1}
+limit 10
+
+16)
+
+filter {$and:[{category_code:"web"},{number_of_employees:{$gt:4000}}]}
+sort {number_of_employees:1}
+
+17)
+
+filter {$and:[{"acquisition.price_amount":{$gt:10000000}},{"acquisition.price_currency_code":"EUR"}]}
 
 
+18)
 
+filter {"acquisition.acquired_month":{$lte:4}}
+project {name:1,acquisition:1,_id:0}
+limit 10
 
+19)
 
+filter {$and:[{founded_year:{$gte:2000}},{founded_year:{$lte:2010}},{"acquisition.acquired_year":{$gte:2011}}]}
 
+20)
 
+filter {"$and":[{$where:"this.deadpooled_year">("this.founded_year")+3},{"founded_year":{$ne:None}}]}
