@@ -15,6 +15,32 @@ a = input('Please choose your first number (zero to five): ')
 b = input('What do you want to do? plus or minus: ')
 c = input('Please choose your second number (zero to five): ')
 
+#MY SOLUTION
+
+n=[1,2,3,4,5,6,7,8,9,10]
+w= ['zero','one','two','three','four','five','six','seven','eight','nine','ten']
+dic=  {'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10}
+
+if a not in w[:6] or c not in w[:6]:
+    print("I am not able to answer this question. Check your input.")
+else:
+    if b == 'plus':
+        result = dic[a] + dic[c]
+        print(f"{a} plus {c} equals {w[result]}")
+    elif b == 'minus':
+        if dic[a] > dic[c]:
+            result = dic[a] - dic[c]
+            print(f"{a} minus {c} equals {w[result]}")
+        else:
+            result = dic[c] - dic[a]
+            print(f"{a} minus {c} equals negative {w[result]}")
+            
+print("Thanks for using this calculator, goodbye :)")  
+
+
+
+
+'''
 if a == 'zero' and b == 'plus'  and c == 'zero':
     print("zero plus zero equals zero")
 if a == 'zero' and b == 'plus'  and c == 'one':
@@ -167,3 +193,4 @@ if (not a == 'zero' and not a == 'one' and not a == 'two' and not a == 'three' a
     print("I am not able to answer this question. Check your input.")
 
 print("Thanks for using this calculator, goodbye :)")
+'''
